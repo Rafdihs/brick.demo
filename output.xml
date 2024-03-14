@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.12.2 on win32)" generated="2024-03-14T09:08:31.484824" rpa="false" schemaversion="5">
+<suite id="s1" name="Brick" source="c:\Users\ASUS\Documents\Quality Assurance\RobotFramework\brick.robot">
+<test id="s1-t1" name="Brick Demo Website Sign Up" line="6">
+<kw name="Fill Sign up with valid data" owner="stepsbrick">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-03-14T09:08:31.779242" level="INFO">Opening browser 'chrome' to base url 'https://qademo.onebrick.io/'.</msg>
+<arg>${url_signup}</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-03-14T09:08:31.778245" elapsed="3.146540"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-03-14T09:08:34.927782" level="INFO">Typing text 'Test' into text field 'id=firstName'.</msg>
+<arg>${firstname}</arg>
+<arg>Test</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-03-14T09:08:34.925784" elapsed="0.287363"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-03-14T09:08:35.214139" level="INFO">Typing text 'Test' into text field 'id=lastName'.</msg>
+<arg>${lastname}</arg>
+<arg>Test</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-03-14T09:08:35.213147" elapsed="0.112428"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-03-14T09:08:35.326572" level="INFO">Typing text 'aaaaaaaaaaaaaaaaa@aaa.com' into text field 'id=email'.</msg>
+<arg>${emailsignup}</arg>
+<arg>aaaaaaaaaaaaaaaaa@aaa.com</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-03-14T09:08:35.326572" elapsed="0.153384"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-03-14T09:08:35.479956" level="INFO">Typing text '8123717321' into text field 'id=phoneNumber'.</msg>
+<arg>${phone}</arg>
+<arg>8123717321</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-03-14T09:08:35.479956" elapsed="0.126722"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-03-14T09:08:35.606678" level="INFO">Typing text 'Malang' into text field 'id=address'.</msg>
+<arg>${address}</arg>
+<arg>Malang</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-03-14T09:08:35.606678" elapsed="0.113775"/>
+</kw>
+<kw name="Input Password" owner="SeleniumLibrary">
+<msg time="2024-03-14T09:08:35.721450" level="INFO">Typing password into text field 'id=password'.</msg>
+<msg time="2024-03-14T09:08:35.764806" level="INFO">Temporally setting log level to: NONE</msg>
+<arg>${password}</arg>
+<arg>brick123</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-03-14T09:08:35.720453" elapsed="0.117675"/>
+</kw>
+<kw name="Input Password" owner="SeleniumLibrary">
+<msg time="2024-03-14T09:08:35.839126" level="INFO">Typing password into text field 'confirm_password'.</msg>
+<msg time="2024-03-14T09:08:35.880766" level="INFO">Temporally setting log level to: NONE</msg>
+<arg>${confpass}</arg>
+<arg>brick123</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-03-14T09:08:35.838128" elapsed="0.116509"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-03-14T09:08:35.955141" level="INFO">Clicking button 'name=register'.</msg>
+<arg>${btnregister}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-03-14T09:08:35.954637" elapsed="0.546256"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2024-03-14T09:08:36.579838" level="INFO">Current page contains text 'Success'.</msg>
+<arg>Success</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2024-03-14T09:08:36.501890" elapsed="0.078945"/>
+</kw>
+<status status="PASS" start="2024-03-14T09:08:31.777250" elapsed="4.803585"/>
+</kw>
+<status status="PASS" start="2024-03-14T09:08:31.777250" elapsed="4.804584"/>
+</test>
+<test id="s1-t2" name="Brick Demo Website Sign In" line="9">
+<kw name="Fill Sign in with valid data" owner="stepsbrick">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-03-14T09:08:36.586818" level="INFO">Opening browser 'chrome' to base url 'https://qademo.onebrick.io/login'.</msg>
+<arg>${url_signin}</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-03-14T09:08:36.585821" elapsed="3.452292"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-03-14T09:08:40.041104" level="INFO">Typing text 'rafdihs@gmail.com' into text field 'id=your_email'.</msg>
+<arg>${emailsignin}</arg>
+<arg>rafdihs@gmail.com</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-03-14T09:08:40.040106" elapsed="0.635054"/>
+</kw>
+<kw name="Input Password" owner="SeleniumLibrary">
+<msg time="2024-03-14T09:08:40.677211" level="INFO">Typing password into text field 'id=password'.</msg>
+<msg time="2024-03-14T09:08:40.809737" level="INFO">Temporally setting log level to: NONE</msg>
+<arg>${password}</arg>
+<arg>brick123</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-03-14T09:08:40.676198" elapsed="0.357305"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-03-14T09:08:41.035500" level="INFO">Clicking button 'name=login'.</msg>
+<arg>${btnlogin}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-03-14T09:08:41.034503" elapsed="0.521780"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2024-03-14T09:08:41.572755" level="INFO">Current page contains text 'Success'.</msg>
+<arg>Success</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2024-03-14T09:08:41.556283" elapsed="0.017471"/>
+</kw>
+<status status="PASS" start="2024-03-14T09:08:36.584825" elapsed="4.988929"/>
+</kw>
+<status status="PASS" start="2024-03-14T09:08:36.583827" elapsed="4.990923"/>
+</test>
+<status status="PASS" start="2024-03-14T09:08:31.490809" elapsed="10.084939"/>
+</suite>
+<statistics>
+<total>
+<stat pass="2" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="2" fail="0" skip="0" id="s1" name="Brick">Brick</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
